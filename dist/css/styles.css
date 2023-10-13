@@ -3506,7 +3506,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
-/*드롭다운메뉴  */
+드롭다운메뉴 
 ul li{
   list-style: none;
 }
@@ -10976,7 +10976,7 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 3rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
