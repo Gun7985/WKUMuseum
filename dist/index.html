@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>원광대학교 박물관</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -20,18 +20,21 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/MusLogo.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">박물관안내</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">전시실안내</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">박물관활동</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">자료 공유실</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">공지사항</a></li>
+                    </ul>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#login">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,9 +42,34 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="assets/img/mainBanner/mainBanner1.png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/mainBanner/mainBanner2.png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/mainBanner/mainBanner3.png" class="d-block w-50" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  </div>
             </div>
         </header>
         <!-- Services-->
@@ -373,15 +401,46 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-4 text-lg-start">
+                        <nav>
+                            <a
+                                href="http://www.wku.ac.kr/privacy/int_privacy.html"
+                                target="_blank"
+                                style="color: black"
+                                >개인정보처리방침</a
+                            >
+                            |
+                            <a
+                                href="http://www.wku.ac.kr/privacy/int_emailaddr.html"
+                                target="_blank"
+                                style="color: black"
+                                >이메일무단수집거부</a
+                            >
+                            |
+                            <a
+                                href="http://www.wku.ac.kr/about/campus-info/road-map.html"
+                                target="_blank"
+                                style="color: black"
+                                >학교오시는길</a
+                            >
+                        </nav>
+                        <div>우)54538 전북 익산시 익산대로 460</div>
+                        TEL 063-850-5114 FAX 063-850-6666
                     </div>
+                    <div class="col-lg-4 my-3 my-lg-0"></div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a
+                            class="btn btn-dark btn-social mx-2"
+                            href="https://www.youtube.com/user/WonkwangUniversity"
+                            aria-label="Youtube"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
+                        <a
+                            class="btn btn-dark btn-social mx-2"
+                            href="https://www.facebook.com/WonkwangUniversity"
+                            aria-label="Facebook"
+                            ><i class="fab fa-facebook-f"></i
+                        ></a>
                     </div>
                 </div>
             </div>
