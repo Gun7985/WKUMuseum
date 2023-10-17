@@ -3506,7 +3506,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
-
+드롭다운메뉴 
 #menu > ul > li {
   float:left;
   width:140px;
@@ -3625,47 +3625,6 @@ textarea.form-control-lg {
    white-space: nowrap;
 
  }
-}
-
-#menu {
-  font:bold 16px "malgun gothic";
-  width :1200px ;
-  height :50px ;
-  
-  color:white ;
-  line-height :50px ;
-  margin :50px auto;
-  text-align:center ;
-  display: flex;
-  justify-content: center;
-  
-}
-
-#menu > ul > li {
-   float:left;
-   width:140px;
-   position:relative;
-}
-#menu > ul > li > ul {
-   width:130px;
-   display:none;
-   position: absolute;
-   font-size:14px;
-   background: #555;
-   padding-left: 0; 
-}
-#menu > ul > li:hover > ul {
-   display:block;
-}
-#menu > ul > li > ul > li:hover {
-   background: #777;
-   transition: ease 1s;
-   }
-   #menu > ul > li > ul > li {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    
 }
 
 .btn-group,
@@ -11158,7 +11117,89 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+#portfolio .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+.portfolio-modal .modal-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
 
 .timeline {
   position: relative;
@@ -11405,20 +11446,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 @media (min-width: 576px){
-.SEI_poster {
-    width: 500px; /* 이미지의 너비 */
-    height: auto; /*이미지의 높이 자동 조정*/
-    margin: 10px; /* 이미지 간격 조정 */
-}
-.poster-container {
-  display: flex;
-  justify-content: center;
-
-}
-.container .SEI_poster{
-  
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-}
+  .SEI_poster {
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
+  }
+  }
