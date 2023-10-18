@@ -11440,6 +11440,44 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+.icon-container {
+  text-align: center;
+}
+
+.icon-container img {
+  min-width: 100px;
+  min-height: 100px; 
+  width: 30%;
+  height: auto;
+}
+
+.history-container {
+  margin-top: 1rem;
+  border: 1px solid #d0d0cf;
+  padding: 20px;
+  text-align: left;
+}
+
+.text-container {
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .icon-container img {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .history-container {
+    text-align: center;
+  }
+
+  .text-container {
+    padding-left: 0;
+  }
+}
+
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
