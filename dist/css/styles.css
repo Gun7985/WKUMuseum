@@ -11492,3 +11492,15 @@ section#contact form#contactForm :-ms-input-placeholder {
     box-sizing: border-box;
   }
   }
+  
+  .img-size {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .img-size2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .Tour-table {}
