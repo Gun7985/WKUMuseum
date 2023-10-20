@@ -11466,6 +11466,12 @@ section#contact form#contactForm :-ms-input-placeholder {
  margin-top: 2rem;
 }
 
+#map {
+  width: 700px;
+  height: 550px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .icon-container img {
     min-width: 100px;
@@ -11479,6 +11485,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   .text-container {
     padding-left: 0;
   }
+  #map {
+    min-width: 200px;
+    min-height: 200px;
+    width: 300px;
+    height: 300px;
+}
 }
 
 
