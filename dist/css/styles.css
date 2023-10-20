@@ -3507,33 +3507,6 @@ textarea.form-control-lg {
   --bs-dropdown-header-color: #adb5bd;
 }
 
-#menu > ul > li {
-  float:left;
-  width:140px;
-  position:relative;
-}
-#menu > ul > li > ul {
-  width:130px;
-  display:none;
-  position: absolute;
-  font-size:14px;
-  background: #555;
-  padding-left: 0; 
-}
-#menu > ul > li:hover > ul {
-  display:block;
-}
-#menu > ul > li > ul > li:hover {
-  background: #777;
-  transition: ease 1s;
-  }
-  #menu > ul > li > ul > li {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
-
- }
-
 @media (min-width: 1200px) {
  ul li{
  list-style: none;
@@ -3581,6 +3554,11 @@ textarea.form-control-lg {
  }
 }
 
+@media (max-width: 991px){
+  .sub-menu{
+    display: none;
+  }
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
