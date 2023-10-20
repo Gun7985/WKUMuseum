@@ -3506,7 +3506,52 @@ textarea.form-control-lg {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
-
+@media (min-width: 992px) {
+  ul li{
+  list-style: none;
+ }
+ 
+ #menu {
+  font:bold 16px "malgun gothic";
+  width :1200px ;
+  height :50px ;
+ 
+  color:white ;
+  line-height :50px ;
+  margin :50px auto;
+  text-align:center ;
+  display: flex;
+  justify-content: center;
+ 
+ }
+ 
+ #menu > ul > li {
+   float:left;
+   width:140px;
+   position:relative;
+ }
+ #menu > ul > li > ul {
+   width:130px;
+   display:none;
+   position: absolute;
+   font-size:14px;
+   background: #555;
+   padding-left: 0; 
+ }
+ #menu > ul > li:hover > ul {
+   display:block;
+ }
+ #menu > ul > li > ul > li:hover {
+   background: #777;
+   transition: ease 1s;
+   }
+   #menu > ul > li > ul > li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ 
+  }
+ }
 @media (min-width: 1200px) {
  ul li{
  list-style: none;
@@ -3553,7 +3598,52 @@ textarea.form-control-lg {
 
  }
 }
-
+@media (min-width: 1400px) {
+  ul li{
+  list-style: none;
+ }
+ 
+ #menu {
+  font:bold 16px "malgun gothic";
+  width :1200px ;
+  height :50px ;
+ 
+  color:white ;
+  line-height :50px ;
+  margin :50px auto;
+  text-align:center ;
+  display: flex;
+  justify-content: center;
+ 
+ }
+ 
+ #menu > ul > li {
+   float:left;
+   width:140px;
+   position:relative;
+ }
+ #menu > ul > li > ul {
+   width:130px;
+   display:none;
+   position: absolute;
+   font-size:14px;
+   background: #555;
+   padding-left: 0; 
+ }
+ #menu > ul > li:hover > ul {
+   display:block;
+ }
+ #menu > ul > li > ul > li:hover {
+   background: #777;
+   transition: ease 1s;
+   }
+   #menu > ul > li > ul > li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ 
+  }
+ }
 @media (max-width: 991px){
   .sub-menu{
     display: none;
