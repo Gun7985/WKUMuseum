@@ -83,14 +83,14 @@
             <script type="text/javascript"
                 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9bd17be0c5ef10f86f26e5f4913cbea1"></script>
             <script>
-                var mapContainer = document.getElementById('map'), 
+                var mapContainer = document.getElementById('map'),
                     mapOption = {
                         center: new kakao.maps.LatLng(35.96885652098693, 126.95374678138961),
-                        level: 3 
+                        level: 3
                     };
 
                 var map = new kakao.maps.Map(mapContainer, mapOption);
-                
+
                 var markerPosition = new kakao.maps.LatLng(35.96885652098693, 126.95374678138961);
 
                 var marker = new kakao.maps.Marker({
@@ -98,9 +98,90 @@
                 });
 
                 marker.setMap(map);
-;    
+
+                var mapTypeControl = new kakao.maps.MapTypeControl();
+
+                map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+                var zoomControl = new kakao.maps.ZoomControl();
+                map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
             </script>
         </div>
+        <div class="container">
+            <br>
+            <h4 class="text-center" style="text-indent: 20px;">
+                <고속도로 이용시>
+            </h4>
+            <br>
+            <div class="text-center">
+                <div style="text-indent: 20px;">
+                    <h5> - 호남고속도로 -</h5>
+                </div>
+                <div style="text-indent: 20px;">
+                    서울(남부터미널) ↔ 원광대 : 고속버스 - 2시간 30분 소요
+                <br>
+                    서울(센트럴시티) ↔ 익산 : 고속버스 - 2시간 35분 소요
+                <br>
+                    인천 ↔ 익산 : 고속버스 - 3시간 20분 소요
+                <br>
+                    대전 ↔ 익산 : 고속버스 - 50분 소요
+                <br>
+                    광주 ↔ 익산 : 고속버스 - 1시간 소요
+                <br>
+                    부산 ↔ 익산 : 고속버스 - 3시간 30분 소요
+                </div>
+                <br>
+                <div style="text-indent: 20px;">
+                    <h5> - 서해안고속도로 -</h5>
+                </div>
+                <div style="text-indent: 20px;">
+                    서서울IC ↔ 군산IC ↔ 27번 국도 ↔ 익산
+                </div>
+            </div>
+            <br><br>
+            <h4 class="text-center" style="text-indent: 20px;">
+                <열차편(KTX/SRT) 이용시>
+            </h4>
+            <br>
+            <div class="text-center">
+                <div style="text-indent: 20px;">
+                    수서 ↔ 익산 : 58분 소요(최소 소요시간)
+                    <br>
+                    용산 ↔ 익산 : 1시간 6분 소요(최소 소요시간)
+                    <br>
+                    목포 ↔ 익산 : 1시간 4분 소요(최소 소요시간)
+                    <br>
+                    여수 ↔ 익산 : 1시간 33분 소요(최소 소요시간)
+                </div>
+            </div>
+            <br><br>
+            <h4 class="text-center" style="text-indent: 20px;">
+                <항공편 이용시>
+            </h4>
+            <br>
+            <div class="text-center">
+                <div style="text-indent: 20px;">
+                    제주 ↔ 군산 : 50분 소요(최소 소요시간)
+                </div>
+            </div>
+            <br><br>
+            <h4 class="text-center" style="text-indent: 20px;">
+                <전북권 승용차 이용시>
+            </h4>
+            <br>
+            <div class="text-center">
+                <div style="text-indent: 20px;">
+                    전주방면 : 호남제일문 → 익산목천동검문소 → 익산산업도로 → 학교
+                    <br>
+                    삼례방면 : 삼례 → 대장촌 → 금강동 → 외환은행 → 약촌삼거리 → 제일A → 학교
+                    <br>
+                    김제방면 : 목천동검문소 → 익산산업도로 → 학교
+                    <br>
+                    강경방면 : 함열 → 황등 → 원불교총부 → 학교
+                    <br>
+                    군산방면 : 대야 → 임피 → 익산산업도로 → 학교
+                </div>
+            </div>
     </section>
 
     <footer class="footer py-4">

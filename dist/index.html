@@ -43,14 +43,16 @@
                     <li class="nav-item"><a class="nav-link" href="exhibition.html" style="font-size: 20px;">전시실안내</a>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="Special_Exhibition_Information.html" style="font-size: 20px;">박물관활동</a>
+                    <li class="nav-item"><a class="nav-link" href="Special_Exhibition_Information.html"
+                            style="font-size: 20px;">박물관활동</a>
                         <ul>
                             <li><a href="Special_Exhibition_Information.html">기획전시안내</a></li>
                             <li><a href="Donating_Artifacts.html">유물기증안내</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="Request_Viewing_Reproduction.html" style="font-size: 20px;">자료공유실</a>
+                    <li class="nav-item"><a class="nav-link" href="Request_Viewing_Reproduction.html"
+                            style="font-size: 20px;">자료공유실</a>
                         <ul>
                             <li><a href="Request_Viewing_Reproduction.html">박물관 소장유물</a></li>
                             <li><a href="Museum_Event.html">박물관행사</a></li>
@@ -174,9 +176,34 @@
                         <div style="text-align: center; font-size: 25px">
                             <strong>찾아오시는길</strong>
                         </div>
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                            <img class="img-fluid" src="assets/img/wku-road-map.png" alt="..." />
-                        </a>
+                        <div id="map2"></div>
+
+                        <script type="text/javascript"
+                            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9bd17be0c5ef10f86f26e5f4913cbea1"></script>
+                        <script>
+                            var mapContainer = document.getElementById('map2'),
+                                mapOption = {
+                                    center: new kakao.maps.LatLng(35.96885652098693, 126.95374678138961),
+                                    level: 3
+                                };
+
+                            var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                            var markerPosition = new kakao.maps.LatLng(35.96885652098693, 126.95374678138961);
+
+                            var marker = new kakao.maps.Marker({
+                                position: markerPosition
+                            });
+
+                            marker.setMap(map);
+
+                            var mapTypeControl = new kakao.maps.MapTypeControl();
+
+                            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+                            var zoomControl = new kakao.maps.ZoomControl();
+                            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+                        </script>
                     </div>
                 </div>
             </div>
