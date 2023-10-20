@@ -11553,4 +11553,15 @@ section#contact form#contactForm :-ms-input-placeholder {
     height: auto;
     object-fit: cover;
   }
-  .Tour-table {}
+
+  .SEI_poster {
+    max-width: 80%;
+    height: auto;
+}
+
+  @media (max-width: 768px) {
+    .poster-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
